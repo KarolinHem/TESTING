@@ -1,1 +1,1 @@
-# TESTING
+# TESTING [![Discuss](https://img.shields.io/badge/discuss-ejbca-ce?style=flat)](https://github.com/Keyfactor/ejbca-ce/discussions) [![Issues](https://img.shields.io/github/issues-raw/Keyfactor/ejbca-ce)](https://github.com/Keyfactor/ejbca-ce/issues) 
