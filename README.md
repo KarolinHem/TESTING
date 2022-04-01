@@ -3,3 +3,7 @@
 Here is an intro...
 
 ...and some more descriptions...
+
+## Testing polls
+
+$ polls new "Option A" "Option B" "Option C"
