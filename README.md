@@ -4,6 +4,6 @@ Here is an intro...
 
 ...and some more descriptions...
 
-##How to create a new markdown file with documentation
+## How to create a new markdown file with documentation
 
 Read the [how to-guide](/doc/how-to-create-doc.MD)
