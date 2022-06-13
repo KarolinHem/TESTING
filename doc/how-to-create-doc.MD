@@ -8,4 +8,7 @@ Body text here...
 Body text here...
 
 
-To add a new folder in the GitHub repo: Select Create new file, in the field "Name your file", type <new folder name>/ and then the file name. The folder is created. 
+To add a new folder in the GitHub repo: 
+1. Select Create new file. 
+2. In the field "Name your file", type <new folder name>/. The folder name is added in the path. 
+3. In the field "Name your file", type <new file name>. The file is created. 
