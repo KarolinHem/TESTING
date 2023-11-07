@@ -3,6 +3,3 @@ contact_links:
   - name: Report a Security Vulnerability (Refer to Security policy)
     url: https://github.com/KarolinHem/TESTING/security/policy
     about: Please review our security policy for more details
-  - name: Report a Security Vulnerability (by email)
-    url: mailto:security@primekey.com
-    about: Link to mailto:security@primekey.com
