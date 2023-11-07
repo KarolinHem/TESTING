@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Report a Security Vulnerability
     url: https://bounty.github.com/
-    about: Where to link? mailto:security@primekey.com
+    about: Where to link? mailto:security@primekey.com?
