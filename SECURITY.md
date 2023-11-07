@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Reporting a Vulnerability
-If you think that you have found a security vulnerability in SignServer, please report it to this email address:  [security@primekey.com](mailto:security@primekey.com)
+If you think that you have found a security vulnerability, please report it to this email address:  [security@primekey.com](mailto:security@primekey.com)
 
 _:memo:**Question: Should we set up a keyfactor email address instead?**_
 
