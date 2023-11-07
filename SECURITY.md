@@ -16,7 +16,7 @@ _**Add more info below!**_ _Tell them where to go, how often they can expect to 
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc._
 
-_Example: The Electron team will send a response indicating the next steps in 
+_Example from electron: The Electron team will send a response indicating the next steps in 
 handling your report. After the initial reply to your report, the security team 
 will keep you informed of the progress towards a fix and full announcement, and 
 may ask for additional information or guidance._
