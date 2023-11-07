@@ -5,6 +5,10 @@ If you think that you have found a security vulnerability, please report it to t
 
 _:memo:**Question: Should we set up a keyfactor email address instead?**_
 
+_**Text for SignServer**_ If you want to encrypt email traffic, see the keys page on https://www.signserver.org/signserver-keys/ for our PGP key.
+
+_**Text for SignServer**_ If you want to encrypt email traffic, first send a note to the above email address and request PGP credentials.
+
 Describe the issue including all details, for example: 
 * Short summary of the problem
 * The impact and severity of the problem
@@ -26,9 +30,3 @@ may ask for additional information or guidance._
 
 _Example from ossf/scorecard: Our vulnerability management team will respond within 3 working days of your email. If the issue is confirmed as a vulnerability, we will open a Security Advisory and acknowledge your contributions as part of it. This project follows a 90 day disclosure timeline._
 [https://github.com/ossf/scorecard/blob/main/SECURITY.md](https://github.com/ossf/scorecard/blob/main/SECURITY.md) 
-____
-
-## Encrypting Email Traffic
-If you want to encrypt email traffic, see the keys page on https://www.signserver.org/signserver-keys/ for our PGP key.
-
-:memo:_**Question: Is there something similar to add here for EJBCA?**_ 
