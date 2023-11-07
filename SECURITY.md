@@ -1,13 +1,11 @@
-# Security Policy
-
-## Reporting a Vulnerability
+# Reporting a Security Issue
 
 Please report any vulnerabilities by email to [security@primekey.com](mailto:security@primekey.com)
 _:memo:**Question: Should we set up a keyfactor email address instead?**_
 
 Describe the issue including all details, for example: 
 * Short summary of the problem
-* The impact and severity it has
+* The impact and severity of the problem
 * Steps to reproduce
 * Affected product versions
 * _:memo:**Question: Add anything more here?**_
