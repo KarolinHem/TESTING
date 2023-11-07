@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Report a Security Vulnerability
-    url: https://bounty.github.com/
-    about: Where to link? mailto:security@primekey.com?
+  - name: Report a Security Vulnerability (by email)
+    url: mailto:security@primekey.com
+    about: Link to mailto:security@primekey.com
+  - name: Report a Security Vulnerability (Refer to Security policy)
+    url: https://github.com/KarolinHem/TESTING/security/policy
+    about: Please review our security policy for more details
