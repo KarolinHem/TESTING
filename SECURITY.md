@@ -5,9 +5,9 @@ If you think that you have found a security vulnerability, please report it to t
 
 _:memo:**Question: Should we set up a keyfactor email address instead?**_
 
-_**Text for SignServer:**_ If you want to encrypt email traffic, see the keys page on https://www.signserver.org/signserver-keys/ for our PGP key.
+> _**Note for SignServer:**_ If you want to encrypt email traffic, see the keys page on https://www.signserver.org/signserver-keys/ for our PGP key.
 
-_**Text for EJBCA:**_ If you want to encrypt email traffic, first send a note to the above email address and request PGP credentials.
+> _**Note for EJBCA:**_ If you want to encrypt email traffic, first send a note to the above email address and request PGP credentials.
 
 Describe the issue including all details, for example: 
 * Short summary of the problem
