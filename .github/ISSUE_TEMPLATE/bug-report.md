@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Describe the bug**
+**Describe the Bug**
 A clear and concise description of what the bug is.
 
 **To Reproduce**
@@ -17,20 +17,22 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
+**Expected Behavior**
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**Screenshots and Logs**
+If applicable, add screenshots and logs to help explain your problem.
 
-**Product deployment (please complete the following information):**
+**Product Deployment** 
+Please complete the following information:
  - Deployment format: [e.g. software, container]
  - Version [e.g. 8.0.0]
 
-**Desktop (please complete the following information):**
+**Desktop**
+Please complete the following information:
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
 
-**Additional context**
+**Additional Context**
 Add any other context about the problem here.
