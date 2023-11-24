@@ -1,6 +1,6 @@
 # Security Policy
 
-**BEFORE PUBLISHING:** _Update to KF email address. Update Contributors link in SignServer version._ 
+**BEFORE PUBLISHING:** _Update to KF email address? Update Contributors link in SignServer version._ 
 
 ## Reporting a Vulnerability
 If you think that you have found a security vulnerability, please report it to this email address: [security@primekey.com](mailto:security@primekey.com)
