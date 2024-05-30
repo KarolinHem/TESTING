@@ -2,20 +2,40 @@
 
 To be done: Add more links in the footer on https://docs.keyfactor.com/, inspired by the footer on https://www.keyfactor.com/.
 
-Below are some format examples, see edit view for the wiki markup (wikitext) code.
-
 <!-- Wiki markup table -->
-||Heading 1||Heading 2||
-|* [https://www.atlassian.com] 
-* Item 2 
-* Item 3|
-* [https://www.atlassian.com] 
-* Item 2 
-* Item 3|
-
 ||Heading 1||Heading 2||
 |* [https://www.atlassian.com]
 * Item 2
 * Item 3|# Item 1
 # Item 2
 # Item 3|
+
+<!-- Wiki markup table -->
+||Enterprise||Community||
+|* [EJBCA Enterprise|https://www.keyfactor.com/products/ejbca-enterprise/] 
+* [Command|https://www.keyfactor.com/products/command/]
+* [Command for IoT|https://www.keyfactor.com/products/command-iot/]
+* [SignServer Enterprise|https://www.keyfactor.com/products/signserver-enterprise/]
+* [Signum|https://www.keyfactor.com/products/signum/]
+* [Integrations|https://www.keyfactor.com/integrations/]
+* [Bouncy Castle Support|https://www.keyfactor.com/open-source/bouncy-castle-support/]|* [Keyfactor Community|https://www.keyfactor.com/open-source/community/]
+* [EJBCA Community|https://www.ejbca.org/] 
+* [SignServer Community|https://www.signserver.org/]
+* [Bouncy Castle|https://www.bouncycastle.org/]
+* [Keyfactor on GitHub|https://github.com/Keyfactor]|
+
+Enterprise
+* [https://www.keyfactor.com/products/ejbca-enterprise/ EJBCA Enterprise] 
+* [https://www.keyfactor.com/products/command/ Command]
+* [https://www.keyfactor.com/products/command-iot/ Command for IoT]
+* [https://www.keyfactor.com/products/signserver-enterprise/ SignServer Enterprise]
+* [https://www.keyfactor.com/products/signum/ Signum]
+* [https://www.keyfactor.com/integrations/ Integrations]
+* [https://www.keyfactor.com/open-source/bouncy-castle-support/ Bouncy Castle Support]
+
+Community
+* [https://www.keyfactor.com/open-source/community/ Keyfactor Community]
+* [https://www.ejbca.org/ EJBCA Community] 
+* [https://www.signserver.org/ SignServer Community]
+* [https://www.bouncycastle.org/ Bouncy Castle]
+* [https://github.com/Keyfactor Keyfactor GitHub]
