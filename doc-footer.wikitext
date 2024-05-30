@@ -1,0 +1,93 @@
+= Doc footer - Alternatives for more links =
+
+To be done: Add more links in the footer on https://docs.keyfactor.com/, inspired by the footer on https://www.keyfactor.com/.
+
+Below are some format examples, see edit view for the wiki markup (wikitext) code.
+
+<!-- Bullet lists -->
+== Bullet lists ==
+Enterprise
+* [https://www.keyfactor.com/products/ejbca-enterprise/ EJBCA Enterprise] 
+* [https://www.keyfactor.com/products/command/ Command]
+* [https://www.keyfactor.com/products/command-iot/ Command for IoT]
+* [https://www.keyfactor.com/products/signserver-enterprise/ SignServer Enterprise]
+* [https://www.keyfactor.com/products/signum/ Signum]
+* [https://www.keyfactor.com/integrations/ Integrations]
+* [https://www.keyfactor.com/open-source/bouncy-castle-support/ Bouncy Castle Support]
+
+Community
+* [https://www.keyfactor.com/open-source/community/ Keyfactor Community]
+* [https://www.ejbca.org/ EJBCA Community] 
+* [https://www.signserver.org/ SignServer Community]
+* [https://www.bouncycastle.org/ Bouncy Castle]
+* [https://github.com/Keyfactor Keyfactor GitHub]
+
+<!-- Wiki markup table -->
+== Wiki markup table ==
+{| 
+|-
+! Enterprise !! Community 
+|-
+| [https://www.keyfactor.com/products/ejbca-enterprise/ EJBCA Enterprise] || [https://www.ejbca.org/ EJBCA Community]  
+|-
+| [https://www.keyfactor.com/products/signserver-enterprise/ SignServer Enterprise] || [https://www.signserver.org/ SignServer Community] 
+|-
+| [https://www.keyfactor.com/open-source/bouncy-castle-support/ Bouncy Castle Support] || [https://www.bouncycastle.org/ Bouncy Castle]  
+|-
+| - || [https://github.com/Keyfactor Keyfactor GitHub] 
+|}
+
+<!-- Small Wiki markup table -->
+=== Small Wiki markup table - For testing ===
+{| 
+|-
+! Enterprise !! Community 
+|-
+| LINK || LINK  
+|}
+
+<!-- html table -->
+== html table ==
+<table>
+  <tr>
+    <th>Enterprise</th>
+    <th>Community</th>
+  </tr>
+  <tr>
+    <td>[https://www.keyfactor.com/products/ejbca-enterprise/ EJBCA Enterprise]</td>
+    <td>[https://www.ejbca.org/ EJBCA Community]</td>
+  </tr>
+  <tr>
+    <td>[https://www.keyfactor.com/products/signserver-enterprise/ SignServer Enterprise]</td>
+    <td>[https://www.signserver.org/ SignServer Community]</td>
+  </tr>
+  <tr>
+    <td>[https://www.keyfactor.com/open-source/bouncy-castle-support/ Bouncy Castle Support]</td>
+    <td>[https://www.bouncycastle.org/ Bouncy Castle]</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>[https://github.com/Keyfactor Keyfactor GitHub]</td>
+  </tr>
+</table>
+
+<!-- small html table -->
+=== Small html table - For testing ===
+<table>
+  <tr>
+    <th>Enterprise</th>
+    <th>Community</th>
+  </tr>
+  <tr>
+    <td>A LINK</td>
+    <td>ANOTHER LINK</td>
+  </tr>
+</table>
+
+== Text formatting - Not working ==
+<!-- Centered text -->
+=== Centered text ===
+<div class="center" style="width: auto; margin-left: auto; margin-right: auto;">Centered text</div>
+<!-- Left-aligned text -->
+=== Left-aligned text ===
+<div class="left" style="width: auto; margin-left: auto; margin-right: auto;">Left-aligned text</div>
