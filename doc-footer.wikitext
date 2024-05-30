@@ -4,6 +4,22 @@ To be done: Add more links in the footer on https://docs.keyfactor.com/, inspire
 
 Below are some format examples, see edit view for the wiki markup (wikitext) code.
 
+<!-- Wiki markup table -->
+||Heading 1||Heading 2||
+|* [https://www.atlassian.com] 
+* Item 2 
+* Item 3|
+* [https://www.atlassian.com] 
+* Item 2 
+* Item 3|
+
+||Heading 1||Heading 2||
+|* [https://www.atlassian.com]
+* Item 2
+* Item 3|# Item 1
+# Item 2
+# Item 3|
+
 <!-- Bullet lists -->
 == Bullet lists ==
 Enterprise
