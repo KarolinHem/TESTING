@@ -41,3 +41,5 @@ Here is an intro...
 ## Create a new markdown file with documentation
 
 Read the [how to-guide](/doc/how-to-create-doc.MD)
+
+<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=79896220-4f20-4f71-9cb8-b28010140de3" />
