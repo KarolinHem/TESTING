@@ -42,6 +42,7 @@ Here is an intro...
 
 Read the [how to-guide](/doc/how-to-create-doc.MD)
 
+# Get started with Docker
 Quick start with this Docker Pull Command: docker pull downloads.ejbca.org/keyfactor/ejbca-ce
 
-<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=79896220-4f20-4f71-9cb8-b28010140de3" />
+<img referrerpolicy="no-referrer-when-downgrade" src=https://static.scarf.sh/a.png?x-pxid=e4fb5e1a-cb70-4541-ade3-b8e1df59a674 />
