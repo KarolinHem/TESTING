@@ -4,8 +4,10 @@
 ## Testing Release Badges
 Minikube example: 
 [![Latest Release](https://img.shields.io/github/v/release/kubernetes/minikube?include_prereleases)](https://github.com/kubernetes/minikube/releases/latest)
+
 EJBCA example: 
 [![Latest Release](https://img.shields.io/github/v/release/keyfactor/ejbca-ce)](https://github.com/keyfactor/ejbca-ce/releases/latest)
+
 Testing for Bouncy Castle: 
 [![Latest Release](https://img.shields.io/github/v/release/bcgit/bc-java)](https://github.com/bcgit/bc-java/releases/latest)
 
