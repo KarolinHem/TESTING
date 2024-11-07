@@ -34,6 +34,10 @@
 
 # TESTING [![Discuss](https://img.shields.io/badge/discuss-ejbca-ce?style=flat)](https://github.com/Keyfactor/ejbca-ce/discussions) [![Issues](https://img.shields.io/github/issues-raw/Keyfactor/ejbca-ce)](https://github.com/Keyfactor/ejbca-ce/issues) 
 
+[![Latest Release](https://img.shields.io/github/v/release/kubernetes/minikube?include_prereleases)](https://github.com/kubernetes/minikube/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/keyfactor/ejbca-ce)](https://github.com/keyfactor/ejbca-ce/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/bcgit/bc-java)](https://github.com/bcgit/bc-java/releases/latest)
+
 Here is an intro...
 
 ...and some more descriptions...
