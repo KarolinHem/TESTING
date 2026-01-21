@@ -13,15 +13,17 @@ EJBCA is a public key infrastructure (PKI) and certificate authority (CA) soluti
 
 EJBCA is developed in Java and runs on a JVM such as OpenJDK, available on most platforms, such as Linux and Windows. 
 
+## About Community and Enterprise Editions
+
 There are two editions of EJBCA: 
 
-* **[EJBCA Community](https://www.ejbca.org/)** (EJBCA CE)
+### [EJBCA Community](https://www.ejbca.org/) (EJBCA CE)
 
 EJBCA Community Edition is an LGPL-licensed open-source subset of EJBCA Enterprise, certified by the Open Source Initiative, and designed for learning, testing, and prototyping certificate and PKI workflows. 
 
 EJBCA CE is not recommended for production use, as production deployments typically require security certifications, high assurance features, SLAs, support, and operational assurances  available in EJBCA Enterprise Edition. 
 
-* **[EJBCA Enterprise](https://www.keyfactor.com/products/ejbca-enterprise/)** (EJBCA EE)
+### [EJBCA Enterprise](https://www.keyfactor.com/products/ejbca-enterprise/) (EJBCA EE)
 
 EJBCA Enterprise Edition is designed for production PKI deployments, offering advanced features, security certifications, high assurance features, enterprise-grade operations, and commercial support with SLAs.  
 
