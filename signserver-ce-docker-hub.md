@@ -5,9 +5,9 @@ SignServer Community Edition
 
 >**Note:**
 >
->We take the security of SignServer and the trust of our users seriously. If you believe you have identified a security vulnerability in SignServer, please report it responsibly by contacting us at security@primekey.com 
+>*We take the security of SignServer and the trust of our users seriously. If you believe you have identified a security vulnerability in SignServer, please report it responsibly by contacting us at security@primekey.com.* 
 >
->SignServer Community Edition is not intended for production use. For production signing services, use the Keyfactor SignServer Enterprise or Keyfactor Signum 
+>*SignServer Community Edition is not intended for production use. For production signing services, use the Keyfactor SignServer Enterprise or Keyfactor Signum.* 
 
 SignServer is a signing solution for digitally signing code, documents, and artifacts while keeping signing keys secure and signing workflows auditable. It is platform-independent and supports centralized, policy-driven signing operations. 
 
