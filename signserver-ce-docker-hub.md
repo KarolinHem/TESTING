@@ -1,13 +1,13 @@
 [//]: # (Please update the Confluence page titled "SignServer CE DockerHub - Markdown" if making any changes to this page)
 
-Please note:  
-
-We take the security of SignServer and the trust of our users seriously. If you believe you have identified a security vulnerability in SignServer, please report it responsibly by contacting us at security@primekey.com 
-
-SignServer Community Edition is not intended for production use. For production signing services, use the Keyfactor SignServer Enterprise or Keyfactor Signum 
-
-Welcome to SignServer Community Edition
+SignServer Community Edition
 ============================
+
+>**Note:**
+>
+>We take the security of SignServer and the trust of our users seriously. If you believe you have identified a security vulnerability in SignServer, please report it responsibly by contacting us at security@primekey.com 
+>
+>SignServer Community Edition is not intended for production use. For production signing services, use the Keyfactor SignServer Enterprise or Keyfactor Signum 
 
 SignServer is a signing solution for digitally signing code, documents, and artifacts while keeping signing keys secure and signing workflows auditable. It is platform-independent and supports centralized, policy-driven signing operations. 
 
@@ -17,20 +17,17 @@ There are two editions of SignServer:
 
 * **[SignServer Community](https://www.signserver.org/)**  
 
-SignServer Community Edition is an OSI*-certified, LGPL-licensed open-source subset of SignServer Enterprise, designed for learning, testing, and prototyping signing workflows for code, documents, and artifacts. 
+SignServer Community Edition is an LGPL-licensed open-source subset of SignServer Enterprise, certified by the Open Source Initiative, and designed for learning, testing, and prototyping signing workflows for code, documents, and artifacts. 
 
 SignServer CE is not recommended for production use, as production signing environments typically require security certifications, advanced key protection, auditability, SLAs, support, and operational assurances available in SignServer Enterprise Edition. 
-
-*OSI Certified is a certification mark of the Open Source Initiative. 
 
 * **[SignServer Enterprise](https://www.keyfactor.com/products/signserver-enterprise/)**
 
 SignServer Enterprise Edition is designed for production signing environments, offering advanced signing features, enterprise-grade key management, auditability, compliance capabilities, and commercial support with SLAs. 
 
-Learn more about the differences between SignServer CE and SignServer EE: SignServer Community vs Enterprise. https://www.signserver.org/community-vs-enterprise/
+Learn more about the differences between SignServer CE and SignServer EE: [SignServer Community vs Enterprise](https://www.signserver.org/community-vs-enterprise/)
 
-
-Get started with SignServer Docker Container
+Get started with the SignServer Docker Container
 =================
 
 The SignServer Community Docker container can be pulled straight from the command line using the docker tool. To download and unpack the latest SignServer Community container image from Docker Hub, use the following command: 
@@ -51,23 +48,21 @@ Install the SignServer Helm chart from Artifact Hub.
 
 Get Started with SignServer Enterprise Edition
 ==============================================
-Keyfactor offers 30-day free trials of SignServer Enterprise use cases in ready-to-use environments, no installation or setup required through Keyfactor Test Drive   https://docs.keyfactor.com/test-drives/latest/
+Keyfactor offers 30-day free trials of SignServer Enterprise use cases in ready-to-use environments, no installation or setup required through [Keyfactor Test Drives](https://docs.keyfactor.com/test-drives/)
 
-
-Get in Contact: Request a Demo  https://www.keyfactor.com/demo-request/
-
+Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)
 
 Community Support
 =================
 
-In our [Community](https://www.keyfactor.com/community/) we welcome contributions. The Community software is open source and community supported, there is no support SLA, but a helpful best-effort Community.
+In our [Community](https://www.keyfactor.com/community/) we welcome contributions. The Community software is open source and community-supported, there is no support SLA, but a helpful best-effort Community.
 
-For information about how to engage in the community, get support, ask questions and post comments please see: [https://www.signserver.org/engage/](https://www.signserver.org/engage/)
+For information about how to engage in the community, get support, ask questions, and post comments, see [Engage in the SignServer Community](https://www.signserver.org/engage/)
 
 Enterprise Support
 ==================
 
-The Enterprise edition is a licensed software backed by professional support services. Get in contact to learn more. **[EJBCA Enterprise](https://www.keyfactor.com/contact-us/)**.
+The Enterprise edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
 
 License
 =======
@@ -87,7 +82,7 @@ And many more using the container for different use cases. New tutorials are rel
 Minimum System Requirements
 ===========================
 
-To run the SignServer container a system should fulfill these minimum requirements:
+To run the SignServer container, a system should fulfill these minimum requirements:
 
 *   CPU cores: Minimum 2 cores
     
@@ -113,9 +108,9 @@ Starting the container without setting any environment variables will:
 Quick Startup
 =============
 
-To start an ephemeral instance with client certificate authenticated access to management of the instance, run the docker run command according to the following example.
+To start an ephemeral instance with client certificate-authenticated access to management of the instance, run the 'docker run' command according to the following example.
 
-Provide the CA certificate that has issued your authentication certificate. Save it in the current directory as `TrustedCA.pem` or replace the below "`$(pwd)/TrustedCA.pem`" with the file path to your certificate file. The server certificate will be automatically generated and self-signed. See log output for the fingerprint: "Generated TLS certificate with fingerprint xxxx".
+Provide the CA certificate that issued your authentication certificate. Save it in the current directory as `TrustedCA.pem` or replace the below "`$(pwd)/TrustedCA.pem`" with the file path to your certificate file. The server certificate will be automatically generated and self-signed. See log output for the fingerprint: "Generated TLS certificate with fingerprint xxxx".
 
 ```
 docker run -it --rm --name signserver \
@@ -125,7 +120,7 @@ docker run -it --rm --name signserver \
     keyfactor/signserver-ce
 ```
 
-When you stop the container, all data will be gone. Exclude the `--rm` option to persist data in the containers file system or use `DATABASE_JDBC_URL` described below to persist data in an external database.
+When you stop the container, all data will be gone. Exclude the `--rm` option to persist data in the container file system or use `DATABASE_JDBC_URL` described below to persist data in an external database.
 
 Open [http://signserver.example.com/signserver/](http://signserver.example.com/signserver/adminweb/) for SignServer.
 
@@ -136,7 +131,7 @@ See full documentation and video tutorial: [Quick Start Guide - Start SignServer
 Setting up SignServer
 =====================
 
-The following provides instructions for setting up SignServer either for testing purposes, using sample keys and certificates, or setting up SignServer with new keys and certificates, requiring keys to be generated and certificates issued from a Certificate Authority (CA).
+The following provides instructions for setting up SignServer, either for testing purposes with sample keys and certificates, or for setting up SignServer with new keys and certificates, requiring keys to be generated and certificates issued by a Certificate Authority (CA).
 
 Alternative 1: Quick Setup with Snake Oil Keys and Certificates for Demo or Testing Only
 ----------------------------------------------------------------------------------------
@@ -230,7 +225,7 @@ The following provides instructions for setting up SignServer with new keys and 
     
 2.  Click **From Template**.
     
-3.  Select the properties in the **Load From Template** list for the signer to add, for example `pdfsigner.properties` and click **Next**.
+3.  Select the properties in the **Load From Template** list for the signer to add, for example, `pdfsigner.properties`, and click **Next**.
     
 4.  Click **Apply** to load the configuration. The worker is OFFLINE as it needs a key and certificate.
     
