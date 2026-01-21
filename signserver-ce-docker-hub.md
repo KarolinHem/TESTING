@@ -1,7 +1,7 @@
 [//]: # (Please update the Confluence page titled "SignServer CE DockerHub - Markdown" if making any changes to this page)
 
-SignServer Community Edition
-============================
+SignServer Community
+=====================
 
 >**Note:**
 >
