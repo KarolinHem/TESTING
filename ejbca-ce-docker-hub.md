@@ -5,9 +5,9 @@ EJBCA Community Edition
 
 >**Note:**
 >
->We take the security of EJBCA and the trust of our users seriously. If you believe you have identified a security vulnerability in EJBCA, please report it responsibly by contacting us at security@primekey.com. 
+>*We take the security of EJBCA and the trust of our users seriously. If you believe you have identified a security vulnerability in EJBCA, please report it responsibly by contacting us at security@primekey.com.* 
 >
->EJBCA Community Edition is not intended for production use. For production signing services, use Keyfactor EJBCA Enterprise. 
+>*EJBCA Community Edition is not intended for production use. For production signing services, use Keyfactor EJBCA Enterprise.* 
 
 EJBCA is an open-source public key infrastructure (PKI) and certificate authority (CA) solution and one of the longest-running CA software projects. It is platform-independent and covers the full certificate lifecycle, from enrollment and management to validation. 
 
@@ -53,7 +53,7 @@ Community Support
 
 The Community software is open source and community-supported, there is no support SLA, but a helpful best-effort Community. Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/ejbca-ce/discussions) or [Issues](https://github.com/Keyfactor/ejbca-ce/issues).
 
-For information more about how to engage in the community see: [Engage in EJBCA Community](https://www.ejbca.org/engage/)
+For information more about how to engage in the community see: [Engage in the EJBCA Community](https://www.ejbca.org/engage/)
 
 Enterprise Support
 ==================
