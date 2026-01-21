@@ -9,6 +9,12 @@
 [![Discuss](https://img.shields.io/badge/discuss-signserver-ce?style=flat)](https://github.com/Keyfactor/signserver-ce/discussions) 
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/727/badge)](https://www.bestpractices.dev/projects/727)
 
+>**Note:**
+>
+>*We take the security of SignServer and the trust of our users seriously. If you believe you have identified a security vulnerability in SignServer, please report it responsibly by contacting us at security@primekey.com.* 
+>
+>*SignServer Community Edition is not intended for production use. For production signing services, use the Keyfactor SignServer Enterprise or Keyfactor Signum.* 
+
 SignServer is a signing solution for digitally signing code, documents, and artifacts while keeping signing keys secure and signing workflows auditable. It is platform-independent and supports centralized, policy-driven signing operations. 
 
 SignServer is developed in Java and runs on a JVM such as OpenJDK, available on most platforms, such as Linux and Windows. 
