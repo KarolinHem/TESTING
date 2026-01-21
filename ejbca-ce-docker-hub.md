@@ -1,6 +1,6 @@
 [//]: # (Please update the Confluence page titled "EJBCA CE DockerHub - Markdown" if making any changes to this page)
 
-EJBCA Community Edition
+EJBCA Community
 ===============
 
 >**Note:**
