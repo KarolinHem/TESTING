@@ -1,4 +1,10 @@
-# EJBCA Community
+<!--EJBCA Community icon -->
+<h1>
+    <a href="https://www.ejbca.org/">
+        <img src=".github/images/community-ejbca-icon.png?raw=true)" alt="EJBCA Logo" title="EJBCA" height="50" align="center"/>
+    </a>
+    <span>EJBCA Community </span>
+</h1>
 
 [![Discuss](https://img.shields.io/badge/discuss-ejbca-ce?style=flat)](https://github.com/Keyfactor/ejbca-ce/discussions) 
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9419/badge)](https://www.bestpractices.dev/projects/9419)
