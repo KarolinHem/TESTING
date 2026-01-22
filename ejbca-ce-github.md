@@ -13,23 +13,23 @@
 >
 >*We take the security of EJBCA and the trust of our users seriously. If you believe you have identified a security vulnerability in EJBCA, please report it responsibly by contacting us at security@primekey.com.* 
 >
->*EJBCA Community Edition is not intended for production use. For production signing services, use Keyfactor EJBCA Enterprise.* 
+>*EJBCA Community Edition is not intended for production use. For PKI production deployments, use [Keyfactor EJBCA Enterprise Edition](https://www.keyfactor.com/products/ejbca-enterprise/).* 
+
+## Welcome to the EJBCA Community
 
 EJBCA is a public key infrastructure (PKI) and certificate authority (CA) solution and one of the longest-running CA software projects. It is platform-independent and covers the full certificate lifecycle, from enrollment and management to validation.
 
 EJBCA is developed in Java and runs on a JVM such as OpenJDK, available on most platforms, such as Linux and Windows. 
 
-## About Community and Enterprise Editions
-
 There are two editions of EJBCA: 
 
-### [EJBCA Community](https://www.ejbca.org/) (EJBCA CE)
+*  **[EJBCA Community](https://www.ejbca.org/)** (EJBCA CE)
 
 EJBCA Community Edition is an LGPL-licensed open-source subset of EJBCA Enterprise, certified by the Open Source Initiative, and designed for learning, testing, and prototyping certificate and PKI workflows. 
 
-EJBCA CE is not recommended for production use, as production deployments typically require security certifications, high assurance features, SLAs, support, and operational assurances  available in EJBCA Enterprise Edition. 
+EJBCA CE is not intended for production use, as production deployments typically require security certifications, high assurance features, SLAs, support, and operational assurances  available in EJBCA Enterprise. 
 
-### [EJBCA Enterprise](https://www.keyfactor.com/products/ejbca-enterprise/) (EJBCA EE)
+*  **[EJBCA Enterprise](https://www.keyfactor.com/products/ejbca-enterprise/)** (EJBCA EE)
 
 EJBCA Enterprise Edition is designed for production PKI deployments, offering advanced features, security certifications, high assurance features, enterprise-grade operations, and commercial support with SLAs.  
 
@@ -52,7 +52,13 @@ Learn more about the differences between EJBCA CE and EJBCA EE: [EJBCA Community
 
 ### Community Support
 
-The Community software is open source and community-supported, there is no support SLA, but a helpful best-effort Community.
+EJBCA Community is open source and community-supported; there is no support SLA, but a helpful best-effort community is available. 
+
+### Enterprise Support
+
+EJBCA Enterprise is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
+
+### Resources
 
 * To report a problem or suggest a new feature, use the **[Issues](../../issues)** tab.
 * If you want to contribute to the project, see our **[Contributing guidelines](CONTRIBUTING.md)**.
@@ -63,9 +69,6 @@ The Community software is open source and community-supported, there is no suppo
 * See release information: **[EJBCA Release information](https://docs.keyfactor.com/ejbca/latest/ejbca-release-information)**. 
 * Read more on the open-source project website: **[EJBCA website](https://www.ejbca.org/)**.
 * Learn more about the differences between Community and Enterprise: **[EJBCA Community vs Enterprise](https://www.ejbca.org/community-vs-enterprise/)**. 
-
-### Enterprise Support
-The Enterprise edition is a licensed software backed by professional support services. [Get in contact](https://www.keyfactor.com/contact-us/) to learn more. 
 
 ## Open-Source License
 EJBCA Community is licensed under the LGPL license, please see **[LICENSE](LICENSE)**. 
