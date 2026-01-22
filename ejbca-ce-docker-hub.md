@@ -1,15 +1,14 @@
 [//]: # (Please update the Confluence page titled "EJBCA CE DockerHub - Markdown" if making any changes to this page)
 
-EJBCA Community
-===============
+# EJBCA Community
 
 >**Note:**
 >
 >*We take the security of EJBCA and the trust of our users seriously. If you believe you have identified a security vulnerability in EJBCA, please report it responsibly by contacting us at security@primekey.com.* 
 >
->*EJBCA Community Edition is not intended for production use. For PKI production deployments, use Keyfactor EJBCA Enterprise Edition [EJBCA Enterprise](https://www.keyfactor.com/products/ejbca-enterprise/).* 
+>*EJBCA Community Edition is not intended for production use. For PKI production deployments, use [Keyfactor EJBCA Enterprise Edition](https://www.keyfactor.com/products/ejbca-enterprise/).* 
 
-## Welcome to EJBCA Community
+## Welcome to the EJBCA Community
 
 EJBCA is a public key infrastructure (PKI) and certificate authority (CA) solution and one of the longest-running CA software projects. It is platform-independent and covers the full certificate lifecycle, from enrollment and management to validation. 
 
@@ -29,8 +28,9 @@ EJBCA Enterprise Edition is designed for production PKI deployments, offering ad
 
 Learn more about the differences between EJBCA CE and EJBCA EE: [EJBCA Community vs Enterprise](https://www.ejbca.org/community-vs-enterprise/) 
 
-Get started with the EJBCA Community Docker container
-===============
+## Get started 
+
+### Get started with the EJBCA Community Docker container
 
 The EJBCA Community Docker container can be pulled straight from the command line using the docker tool. To download and unpack the latest EJBCA Community container image from Docker Hub, use the following command: 
 
@@ -44,33 +44,40 @@ To run the Docker container, scroll down to either of the following sections for
 
 * Quick start - classic workflow
 
-Get started with EJBCA Enterprise 
-===============
-Keyfactor offers 30-day free trials of EJBCA Enterprise use cases in ready-to-use environments, no installation or setup required: [Keyfactor Test Drives](https://docs.keyfactor.com/test-drives/)
+### Get started with EJBCA on Kubernetes
 
-Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)
+Install the EJBCA Helm chart from Artifact Hub.
 
-Community Support
-=================
+### Get started with EJBCA Enterprise 
 
-The Community software is open source and community-supported; there is no support SLA, but a helpful best-effort Community. Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/ejbca-ce/discussions) or [Issues](https://github.com/Keyfactor/ejbca-ce/issues).
+* Run a 30-day free trial of EJBCA Enterprise in a ready-to-use environment, no installation or setup required: [Keyfactor Test Drives](https://docs.keyfactor.com/test-drives/)  
+* Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)  
 
-For more information about how to engage in the community, see: [Engage in the EJBCA Community](https://www.ejbca.org/engage/)
+## Support
 
-Enterprise Support
-==================
+### Community Support
+
+The Community software is open source and community-supported; there is no support SLA, but a helpful best-effort Community. 
+
+### Enterprise Support
 
 The Enterprise Edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
 
-Open-Source License
-=======
+### Resources
+
+Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/ejbca-ce/discussions) or [Issues](https://github.com/Keyfactor/ejbca-ce/issues).
+
+For more information about how to engage in the community, see: [Engage in the EJBCA Community](https://www.ejbca.org/engage/)
+
+## Open-Source License
 
 EJBCA Community Edition is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
 
-Tutorials
-=======
-There are many good tutorials available on the Keyfactor for Developers [Youtube channel](https://www.youtube.com/@KeyfactorDev). For example:
+## Tutorials
 
+There are many good tutorials available on the Keyfactor for Developers [Youtube channel](https://www.youtube.com/@KeyfactorDev). 
+
+Here are some examples:
 * [Quick start EJBCA Docker Container](https://www.youtube.com/watch?v=x-kEqPrz1g0)
 * [Start out with EJBCA Docker container](https://www.youtube.com/watch?v=oWC5vsGWXQ4)
 * [EJBCA Container - Issue Client Authentication Certificate](https://www.youtube.com/watch?v=wMD1GgSF-JE)
@@ -78,10 +85,7 @@ There are many good tutorials available on the Keyfactor for Developers [Youtube
 * [Deploy EJBCA with Helm](https://www.youtube.com/watch?v=C9dprcbCo4o)
 * [Upgrade with the Container](https://www.ejbca.org/case/upgrade-your-ejbca-docker-container-to-the-latest-version/)
 
-And many more using the container for different use cases. New tutorials are released monthly.
-
-Minimum System Requirements
-===========================
+## Minimum System Requirements
 
 To run the EJBCA container a system should fulfill these minimum requirements:
 
@@ -90,8 +94,7 @@ To run the EJBCA container a system should fulfill these minimum requirements:
 *   at least 1GB of RAM
     
 
-Usage
-=====
+## Usage
 
 The container's behaviour can be customized by overriding environment variables.
 
@@ -101,17 +104,17 @@ Starting the container without setting any environment variables will:
     
 *   Generate a Management CA on first run with an empty database and output the enrollment information for the first administrator to the console.
     
-*   Generate a TLS server side certificate from the Management CA on first startup for the instance's assigned hostname.
+*   Generate a TLS server-side certificate from the Management CA on first startup for the instance's assigned hostname.
     
 *   Log sufficient and necessary information for most common setups to console.
     
 *   Accept plain HTTP connections of port 8080 and TLS connections on port 8443 with optional acceptance of client TLS certificates from any CA known to the application on startup.
     
-Security Parameters
-================
-There are two application specific password settings related to security that you should set to custom values in a production environment. Set them with "-e" flags.
-* PASSWORD_ENCRYPTION_KEY: This key allows for encrypting passwords (PBE) used in EJBCA, like End Entity clear text passwords (for batch generation), Crypto Token passwords (for auto activation), passwords for CMP Alias, SCEP Alias, etc. This property should be set before initial EJBCA installation and it should't be changed later, because there could exist passwords encrypted with the key about to be changed and EJBCA would be unable to decrypt them. You could use any password you consider safe, but it is strongly recommended that you use a randomly generated password
-* CA_KEYSTOREPASS: This password is used internally to protect software Crypto Tokens (not HSM) holding CA private keys in the database unless a password has been set manually, i.e. a default password. It is recommended that you set your own password on crypto tokens and not generate default ones for anything other than test purposes.
+### Security Parameters
+
+There are two application-specific password settings related to security that you should set to custom values in a production environment. Set them with "-e" flags.
+* PASSWORD_ENCRYPTION_KEY: This key allows for encrypting passwords (PBE) used in EJBCA, like End Entity clear text passwords (for batch generation), Crypto Token passwords (for auto activation), passwords for CMP Alias, SCEP Alias, etc. This property should be set before initial EJBCA installation, and it should't be changed later, because there could exist passwords encrypted with the key about to be changed, and EJBCA would be unable to decrypt them. You could use any password you consider safe, but it is strongly recommended that you use a randomly generated password
+* CA_KEYSTOREPASS: This password is used internally to protect software Crypto Tokens (not HSM) holding CA private keys in the database unless a password has been set manually, i.e., a default password. It is recommended that you set your own password on crypto tokens and not generate default ones for anything other than test purposes.
 * EJBCA_CLI_DEFAULTPASSWORD: when using the local command line interface (only available inside the host running the app server), the CLI authenticates using a user (default 'ejbca') and a password. This password can be set to a custom value with this parameter. 
 
 Set by adding something like the following to the docker run command to pass the variables:
@@ -120,8 +123,9 @@ Set by adding something like the following to the docker run command to pass the
 ```
 A vault can be used for variables.
 
-Quick start - ephemeral test instance
-=====================================
+## Quick start 
+
+### Quick start - ephemeral test instance
 
 Start of ephemeral instance where anyone with _unauthenticated_ network access to the instance can manage the system:
 
@@ -138,8 +142,7 @@ When you stop the container all data will be gone. (Skip the `--rm` flag to pers
 See full documentation and video tutorial: 
 **[Quick Start Guide - Start EJBCA Container with Unauthenticated Network Access](https://doc.primekey.com/x/mpuKAw)**
 
-Quick start - classic workflow
-==============================
+### Quick start - classic workflow
 
 Start of ephemeral instance with client certificate authenticated access to management of the instance (`TLS_SETUP_ENABLED="true"`):
 
@@ -158,13 +161,11 @@ When you stop the container all data will be gone. (Skip the `--rm` flag to pers
 See full documentation: 
 **[Quick Start Guide - Start EJBCA Container with Client Certificate Authenticated Access](https://doc.primekey.com/ejbca/tutorials-and-guides/quick-start-guide-start-ejbca-container-with-client-certificate-authenticated-access)**
 
-Additional examples
-===================
+## Additional examples
 
 More complex deployment examples are available on [Github](https://github.com/Keyfactor/keyfactorcommunity).
 
-Using an external database
-==========================
+### Using an external database
 
 EJBCA uses a shared database model for clustering where all EJBCA nodes have a consistent view of the data. Hence, clustering EJBCA will require the use of an external SQL database. MariaDB with Galera clustering is an open source example of such database that can be both highly available and consistent with synchronous multi-master replication.
 
@@ -178,8 +179,7 @@ EJBCA uses a shared database model for clustering where all EJBCA nodes have a c
     
 *   `jdbc:mariadb://database:3306/ejbca?characterEncoding=UTF-8` will connect to an MariaDB instance with a database named `ejbca` at the host database
     
-*   `jdbc:postgresql://database/ejbca` will connect to a Postgres instance with a database named `ejbca` at the host database
-    
+*   `jdbc:postgresql://database/ejbca` will connect to a Postgres instance with a database named `ejbca` at the host database    
 
 `DATABASE_USER`: The username part of the credentials to access the external database. Not required for use of the H2 database.
 
@@ -191,10 +191,9 @@ Using an external database, you can run multiple containers, or stop-start conta
 docker run -it --rm -p 80:8080 -p 443:8443 -h mycahostname -e TLS_SETUP_ENABLED="true" -e DATABASE_JDBC_URL="jdbc:mariadb://172.26.0.1:3306/ejbcatest?characterEncoding=UTF-8" -e DATABASE_USER="ejbca" -e DATABASE_PASSWORD="password" keyfactor/ejbca-ce
 ```
 
-The first time started, database database tables will be created, a ManagementCA will be created, and a superadmin client certificate will be created (for import into your webbrowser) for access to adminweb. If you stop and start the container again, a new TLS server certificate will be created for this instance on startup, but not a new ManagementCA and superadmin keystore, as the old ones from the first startup are present in the database and valid.
+The first time started, database tables will be created, a ManagementCA will be created, and a superadmin client certificate will be created (for import into your web browser) for access to adminweb. If you stop and start the container again, a new TLS server certificate will be created for this instance on startup, but not a new ManagementCA and superadmin keystore, as the old ones from the first startup are present in the database and valid.
 
-Using the container behind a proxy
-==================================
+### Using the container behind a proxy
 
 Configuring the container as a proxy back-end will disable legacy installation workflow or any local TLS server side certificate generation. The Admin UI will be open to anyone will network access until configured otherwise.
 
@@ -213,8 +212,7 @@ When binding a proxy back-end protocol port to
 
 `TLS_SETUP_ENABLED`: Setting this to "later" requires TLS configured on reverse proxy in front of EJBCA, and allows anyone access over TLS to begin using EJBCA. Setting it to "false" for no proxy back-end setup, but still disable container internal TLS setup. Setting it to "false", the applications Admin UI will grant full access to anyone that is able to connect. Currently EJBCA's Admin GUI is not very functional in this setup without a URL-content rewriting proxy in front. By setting this to "simple", you will end up with a Management CA and server side TLS certificate, but anyone can manage the system over HTTPS. Such unauthenticated access is allowed with a PublicAccessAuthenticationToken configured in Admin GUI → Roles → Super Administrator Role → Members. 
 
-Sending email
-=============
+### Sending email
 
 When using email notifications EJBCA by default uses a service in the application server `java:/EjbcaMail`. Such a mail service is pre-configured in the application servers' `standalone.xml`, with environment variables for SMTP host and port.
 
@@ -231,8 +229,7 @@ An example to use Gmail's SMTP server:
 docker run -it --rm -p 80:8080 -p 443:8443 -h mycahostname -e TLS_SETUP_ENABLED="simple" -e SMTP_DESTINATION="smtp.gmail.com" -e SMTP_DESTINATION_PORT="587" -e SMTP_USERNAME="user@gmail.com" -e SMTP_PASSWORD="userssecretpassword" -e SMTP_FROM="user@gmail.com" -e SMTP_SSL_ENABLED="false" keyfactor/ejbca-ce
 ```
 
-Overriding properties
-=====================
+### Overriding properties
 
 The ejbca.ear file in the container is built with enabled what is called `allow.external-dynamic.configuration=true`, this means that it looks for configuration properties, in order of priority:
 
@@ -245,8 +242,7 @@ The ejbca.ear file in the container is built with enabled what is called `allow.
 
 Changing these directly might affect container startup behavior which is leveraging the same mechanism and might break when you update the container. Make sure you know what you do before you override these.
 
-Changing port for static link in Public Web
-===========================================
+### Changing port for static link in Public Web
 
 If you want to run EJBCA on a different HTTPS port than the default (443), for example:
 
@@ -267,8 +263,8 @@ You can fix this with the above property override.
 
 Now you can browse to [https://localhost:8443](https://localhost:8443/) and see that the link Miscellaneous -> Administration is: [https://localhost:9443/ejbca/adminweb/](https://localhost:9443/ejbca/adminweb/)
 
-Using External Plugin
-===========================================
+### Using External Plugin
+
 If you want to use a an external plugin with EJBCA, volume mount the plugin to the container file path of /opt/primekey/ejbca/plugins. Any jar file in this directory will be picked up by EJBCA.
 
 1. Create a directory called ejbca-plugins with the jar file
@@ -278,8 +274,7 @@ If you want to use a an external plugin with EJBCA, volume mount the plugin to t
 
 More information about plug-ins can be found in the EJBCA Documentation: [Creating Plugins](https://docs.keyfactor.com/ejbca/latest/creating-plugins).
 
-Environment Variables
-===========================
+### Environment Variables
 
 There are other environment variables that you can set. You can list see them and their defaults by running:
 
@@ -291,8 +286,7 @@ for example you can enable DEBUG logging with '`-e LOG_LEVEL_APP=DEBUG`'.
 
 See also the documentation for the [EJBCA Community Helm chart](https://github.com/Keyfactor/ejbca-ce/tree/main/charts/ejbca), where many variables are documented. 
 
-Directories of importance
-===========================
+### Directories of importance
 
 Please note that these directory are provided here for transparency and might be subject to change without notice.
 
