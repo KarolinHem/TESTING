@@ -7,9 +7,11 @@ EJBCA Community
 >
 >*We take the security of EJBCA and the trust of our users seriously. If you believe you have identified a security vulnerability in EJBCA, please report it responsibly by contacting us at security@primekey.com.* 
 >
->*EJBCA Community Edition is not intended for production use. For production signing services, use Keyfactor EJBCA Enterprise.* 
+>*EJBCA Community Edition is not intended for production use. For PKI production deployments, use Keyfactor EJBCA Enterprise Edition [EJBCA Enterprise](https://www.keyfactor.com/products/ejbca-enterprise/).* 
 
-EJBCA is an open-source public key infrastructure (PKI) and certificate authority (CA) solution and one of the longest-running CA software projects. It is platform-independent and covers the full certificate lifecycle, from enrollment and management to validation. 
+## Welcome to EJBCA Community
+
+EJBCA is a public key infrastructure (PKI) and certificate authority (CA) solution and one of the longest-running CA software projects. It is platform-independent and covers the full certificate lifecycle, from enrollment and management to validation. 
 
 EJBCA is developed in Java and runs on a JVM such as OpenJDK, available on most platforms, such as Linux and Windows.  
 
@@ -51,19 +53,19 @@ Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)
 Community Support
 =================
 
-The Community software is open source and community-supported, there is no support SLA, but a helpful best-effort Community. Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/ejbca-ce/discussions) or [Issues](https://github.com/Keyfactor/ejbca-ce/issues).
+The Community software is open source and community-supported; there is no support SLA, but a helpful best-effort Community. Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/ejbca-ce/discussions) or [Issues](https://github.com/Keyfactor/ejbca-ce/issues).
 
-For information more about how to engage in the community see: [Engage in the EJBCA Community](https://www.ejbca.org/engage/)
+For more information about how to engage in the community, see: [Engage in the EJBCA Community](https://www.ejbca.org/engage/)
 
 Enterprise Support
 ==================
 
-The Enterprise edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
+The Enterprise Edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
 
-License
+Open-Source License
 =======
 
-EJBCA Community is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
+EJBCA Community Edition is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
 
 Tutorials
 =======
