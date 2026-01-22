@@ -1,15 +1,14 @@
 [//]: # (Please update the Confluence page titled "SignServer CE DockerHub - Markdown" if making any changes to this page)
 
-SignServer Community
-=====================
+# SignServer Community
 
 >**Note:**
 >
 >*We take the security of SignServer and the trust of our users seriously. If you believe you have identified a security vulnerability in SignServer, please report it responsibly by contacting us at security@primekey.com.* 
 >
->*SignServer Community Edition is not intended for production use. For production signing deployments, use the Keyfactor SignServer Enterprise or Keyfactor Signum.* 
+>*SignServer Community Edition is not intended for production use. For production signing deployments, use the [Keyfactor SignServer Enterprise Edition](https://www.keyfactor.com/products/signserver-enterprise/) or [Keyfactor Signum](https://www.keyfactor.com/products/signum/).*
 
-## Welcome to SignServer Community
+## Welcome to the SignServer Community
 
 SignServer is a signing solution for digitally signing code, documents, and artifacts while keeping signing keys secure and signing workflows auditable. It is platform-independent and supports centralized, policy-driven signing operations. 
 
@@ -29,8 +28,9 @@ SignServer Enterprise Edition is designed for production signing deployments, of
 
 Learn more about the differences between SignServer CE and SignServer EE: [SignServer Community vs Enterprise](https://www.signserver.org/community-vs-enterprise/)
 
-Get started with the SignServer Docker Container
-=================
+## Get started 
+
+### Get started with the SignServer Docker Container
 
 The SignServer Community Docker container can be pulled straight from the command line using the docker tool. To download and unpack the latest SignServer Community container image from Docker Hub, use the following command: 
 
@@ -44,43 +44,47 @@ To run the Docker container, see the following sections below for full instructi
 
 * Quick Startup 
 
-Get started with SignServer on Kubernetes
+### Get started with SignServer on Kubernetes
 
 Install the SignServer Helm chart from Artifact Hub.
 
-Get Started with SignServer Enterprise Edition
-==============================================
-Keyfactor offers 30-day free trials of SignServer Enterprise use cases in ready-to-use environments, no installation or setup required through [Keyfactor Test Drives](https://docs.keyfactor.com/test-drives/)
+### Get Started with SignServer Enterprise Edition
 
-Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)
+* Run a 30-day free trial of SignServer Enterprise in a ready-to-use environment, no installation or setup required: [Keyfactor Test Drives](https://docs.keyfactor.com/test-drives/)  
+* Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)  
 
-Community Support
-=================
+## Support
+
+### Community Support
 
 In our [Community](https://www.keyfactor.com/community/) we welcome contributions. The Community software is open source and community-supported; there is no support SLA, but a helpful best-effort Community.
 
 For more information about how to engage in the community, get support, ask questions, and post comments, see [Engage in the SignServer Community](https://www.signserver.org/engage/)
 
-Enterprise Support
-==================
+### Enterprise Support
 
 The Enterprise Edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
 
-Open-Source License
-=======
+### Resources
+
+Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/signserver-ce/discussions) or [Issues](https://github.com/Keyfactor/signserver-ce/issues).
+
+For more information about how to engage in the community, see: [Engage in the SignServer Community](https://www.signserver.org/engage/)
+
+## Open-Source License
 
 SignServer Community is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
 
-Tutorials
-=======
-There are many good tutorials available on the Keyfactor for Developers [Youtube channel](https://www.youtube.com/@KeyfactorDev). For example:
+## Tutorials
 
+There are many good tutorials available on the Keyfactor for Developers [Youtube channel](https://www.youtube.com/@KeyfactorDev). 
+
+Here are some examples:
 * [Quick start SignServer Docker Container](https://www.youtube.com/watch?v=wMqPWKi3ukE)
 * [Code Signing – Set up SignServer and OpenPGP to Sign Code and Packages](https://www.youtube.com/watch?v=cefQkP8XXs8)
 * [Helm Chart for Signing – Quick Start SignServer by Using Kubernetes and Helm](https://www.youtube.com/watch?v=nntAbPvxQAg)
 
-Minimum System Requirements
-===========================
+## Minimum System Requirements
 
 To run the SignServer container, a system should fulfill these minimum requirements:
 
@@ -89,8 +93,7 @@ To run the SignServer container, a system should fulfill these minimum requireme
 *   RAM: 1GB
     
 
-Usage
-=====
+## Usage
 
 The container's behavior can be customized by overriding environment variables.
 
@@ -105,8 +108,7 @@ Starting the container without setting any environment variables will:
 *   Accept plain HTTP connections of port 8080 and TLS connections on port 8443 with optional acceptance of client TLS certificates from any Certificate Authority (CA) known to the application on startup.
     
 
-Quick Startup
-=============
+## Quick Startup
 
 To start an ephemeral instance with client certificate-authenticated access to management of the instance, run the 'docker run' command according to the following example.
 
@@ -128,19 +130,17 @@ Note the links for the SignServer Client Web, Administration Web, and Documentat
 
 See full documentation and video tutorial: [Quick Start Guide - Start SignServer Container with Client Certificate Authenticated Access](https://docs.keyfactor.com/signserver/latest/quick-start-guide-start-signserver-container-with-).
 
-Setting up SignServer
-=====================
+## Setting up SignServer
 
 The following provides instructions for setting up SignServer, either for testing purposes with sample keys and certificates, or for setting up SignServer with new keys and certificates, requiring keys to be generated and certificates issued by a Certificate Authority (CA).
 
-Alternative 1: Quick Setup with Snake Oil Keys and Certificates for Demo or Testing Only
-----------------------------------------------------------------------------------------
+### Alternative 1: Quick Setup with Snake Oil Keys and Certificates for Demo or Testing Only
 
 The following provides instructions for setting up SignServer either for testing purposes, using sample keys and certificates.
 
 Note that this setup is only intended for testing or demonstrating SignServer functionality. The method uses pre-generated sample keys and certificates that are part of SignServer, which must not be relied upon in any way.  
 
-### Add Crypto Token
+#### Add Crypto Token
 
 1.  Go to the SignServer Administration Web.
     
@@ -157,7 +157,7 @@ Note that this setup is only intended for testing or demonstrating SignServer fu
 6.  Click **Apply** to add the Crypto Token.
     
 
-### Add Signers
+#### Add Signers
 
 1.  On the Workers page, click **Add**.
     
@@ -168,7 +168,7 @@ Note that this setup is only intended for testing or demonstrating SignServer fu
 4.  Click **Apply** to load the configuration and verify that the signer is in state ACTIVE and ready to be used.
     
 
-### Test Signing
+#### Test Signing
 
 1.  Go to the SignServer Client Web: [https://signserver.example.com/signserver/clientweb/](https://signserver.example.com/signserver/clientweb/)
     
@@ -179,12 +179,11 @@ Note that this setup is only intended for testing or demonstrating SignServer fu
 4.  Click **Submit** and store the resulting signature file.
     
 
-Alternative 2: Setup with new Keys and Certificates
----------------------------------------------------
+### Alternative 2: Setup with new Keys and Certificates
 
 The following provides instructions for setting up SignServer with new keys and certificates, requiring keys to be generated and certificates issued from a Certificate Authority (CA).
 
-### Add Crypto Token
+#### Add Crypto Token
 
 1.  Go to the SignServer Administration Web.
     
@@ -219,7 +218,7 @@ The following provides instructions for setting up SignServer with new keys and 
 12.  Click **Generate** and verify that the worker is now in state ACTIVE.
     
 
-### Add Signers
+#### Add Signers
 
 1.  On the SignServer Workers page, click **Add**.
     
@@ -230,7 +229,7 @@ The following provides instructions for setting up SignServer with new keys and 
 4.  Click **Apply** to load the configuration. The worker is OFFLINE as it needs a key and certificate.
     
 
-### Generate Keys and Request and Install Certificates
+#### Generate Keys and Request and Install Certificates
 
 To generate keys for the signer:
 
@@ -269,7 +268,7 @@ Then, to install the signer certificates issued by the CA in SignServer, do the 
 4.  Click **Install** and confirm that the signer is now listed as ACTIVE and ready to be used.
     
 
-### Test Signing
+#### Test Signing
 
 1.  Go to the SignServer Client Web: [https://signserver.example.com/signserver/clientweb/](https://signserver.example.com/signserver/clientweb/)
     
@@ -280,13 +279,11 @@ Then, to install the signer certificates issued by the CA in SignServer, do the 
 4.  Click **Submit** and store the resulting signature file.
     
 
-Additional Examples
-===================
+## Additional Examples
 
 More complex deployment examples may be made available on [GitHub](https://github.com/Keyfactor).
 
-Using an External Database
-==========================
+### Using an External Database
 
 If using an external SQL database, MariaDB with Galera clustering provides an open source example of such a database that can be both highly available and consistent with synchronous multi-master replication.
 
@@ -296,14 +293,12 @@ If using an external SQL database, MariaDB with Galera clustering provides an op
 *   `jdbc:h2:mem:ejbcadb;DB_CLOSE_DELAY=-1` will use the bundled H2 database where nothing is persisted when the container is stopped.
 *   `jdbc:mysql://database:3306/signserver?characterEncoding=UTF-8` will connect to an MariaDB/MySQL instance with a database named `signserver` at the host database.
 *   `jdbc:postgresql://database/signserver` will connect to a Postgres instance with a database named `signserver` at the host database.
-    
 
 `DATABASE_USER`: The username part of the credentials to access the external database. Not required for use of the H2 database.
 
 `DATABASE_PASSWORD`: The password part of the credentials to access the external database. Not required for use of the H2 database.
 
-Using the Container Behind a Proxy
-==================================
+### Using the Container Behind a Proxy
 
 Configuring the container as a proxy back-end will disable TLS setup and the Admin UI will be open to anyone with network access until configured otherwise.
 
@@ -320,9 +315,7 @@ When binding a proxy back-end protocol port to
 
 `PROXY_HTTP_BIND`: Run container with two HTTP back-end proxy ports :8081 and :8082 configured bound to the IP address in this variable. Port 8082 will accept the `SSL_CLIENT_CERT HTTP` header.
 
-
-Audit log
-==================================
+## Audit log
 
 SignServer uses Log4j for debug logging and the security events logger from CESeCore for system/audit logging. In addition, the worker logger (transaction log) can be configured to use Log4j and/or the security events logger.
 Audit logging is enabled by default and will be configured with the following properties in cesecore.properties:
