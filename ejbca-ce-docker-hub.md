@@ -20,7 +20,7 @@ There are two editions of EJBCA:
 
 EJBCA Community Edition is an LGPL-licensed open-source subset of EJBCA Enterprise, certified by the Open Source Initiative, and designed for learning, testing, and prototyping certificate and PKI workflows. 
 
-EJBCA CE is not recommended for production use, as production deployments typically require security certifications, high assurance features, SLAs, support, and operational assurances available in EJBCA Enterprise Edition.  
+EJBCA CE is not intended for production use, as production deployments typically require security certifications, high assurance features, SLAs, support, and operational assurances available in EJBCA Enterprise. 
 
 *  **[EJBCA Enterprise](https://www.keyfactor.com/products/ejbca-enterprise/)** (EJBCA EE)
 
@@ -46,7 +46,7 @@ To run the Docker container, scroll down to either of the following sections for
 
 ### Get started with EJBCA on Kubernetes
 
-Install the EJBCA Helm chart from Artifact Hub.
+Install the EJBCA Helm chart from Artifact Hub: [EJBCA Helm chart](https://artifacthub.io/packages/helm/ejbca/ejbca-ce).
 
 ### Get started with EJBCA Enterprise 
 
@@ -57,21 +57,19 @@ Install the EJBCA Helm chart from Artifact Hub.
 
 ### Community Support
 
-The Community software is open source and community-supported; there is no support SLA, but a helpful best-effort Community. 
-
-### Enterprise Support
-
-The Enterprise Edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
-
-### Resources
+EJBCA Community is open source and community-supported; there is no support SLA, but a helpful best-effort community is available. 
 
 Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/ejbca-ce/discussions) or [Issues](https://github.com/Keyfactor/ejbca-ce/issues).
 
 For more information about how to engage in the community, see: [Engage in the EJBCA Community](https://www.ejbca.org/engage/)
 
+### Enterprise Support
+
+EJBCA Enterprise is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
+
 ## Open-Source License
 
-EJBCA Community Edition is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
+EJBCA Community is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
 
 ## Tutorials
 
@@ -204,7 +202,6 @@ When binding a proxy back-end protocol port to
 *   an IP that can later be exposed outside the container (e.g. "0.0.0.0") care needs to be taken to ensure that no traffic can reach the bound port directly.
     
 *   a local IP (e.g. "127.0.0.1") it is expected that a side-car deployment in the same Kubernetes Pod will be used and forward requests inside the Pod.
-    
 
 `PROXY_AJP_BIND`: Run container with an AJP proxy port :8009 bound to the IP address in this variable.
 
@@ -238,7 +235,6 @@ The ejbca.ear file in the container is built with enabled what is called `allow.
 *   `/etc/cesecore/conf/` or `/etc/ejbca/conf/` which are both sym-linked to a common folder
     
 *   configuration files built into the ejbca.ear file
-    
 
 Changing these directly might affect container startup behavior which is leveraging the same mechanism and might break when you update the container. Make sure you know what you do before you override these.
 
