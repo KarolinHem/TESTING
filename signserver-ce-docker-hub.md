@@ -7,7 +7,9 @@ SignServer Community
 >
 >*We take the security of SignServer and the trust of our users seriously. If you believe you have identified a security vulnerability in SignServer, please report it responsibly by contacting us at security@primekey.com.* 
 >
->*SignServer Community Edition is not intended for production use. For production signing services, use the Keyfactor SignServer Enterprise or Keyfactor Signum.* 
+>*SignServer Community Edition is not intended for production use. For production signing deployments, use the Keyfactor SignServer Enterprise or Keyfactor Signum.* 
+
+## Welcome to SignServer Community
 
 SignServer is a signing solution for digitally signing code, documents, and artifacts while keeping signing keys secure and signing workflows auditable. It is platform-independent and supports centralized, policy-driven signing operations. 
 
@@ -17,13 +19,13 @@ There are two editions of SignServer:
 
 * **[SignServer Community](https://www.signserver.org/)**  
 
-SignServer Community Edition is an LGPL-licensed open-source subset of SignServer Enterprise, certified by the Open Source Initiative, and designed for learning, testing, and prototyping signing workflows for code, documents, and artifacts. 
+SignServer Community Edition is an LGPL-licensed open-source subset of SignServer Enterprise Edition, certified by the Open Source Initiative, and designed for learning, testing, and prototyping signing workflows for code, documents, and artifacts. 
 
-SignServer CE is not recommended for production use, as production signing environments typically require security certifications, advanced key protection, auditability, SLAs, support, and operational assurances available in SignServer Enterprise Edition. 
+SignServer CE is not recommended for production use, as production signing deployments typically require security certifications, advanced key protection, auditability, SLAs, support, and operational assurances available in SignServer Enterprise Edition. 
 
 * **[SignServer Enterprise](https://www.keyfactor.com/products/signserver-enterprise/)**
 
-SignServer Enterprise Edition is designed for production signing environments, offering advanced signing features, enterprise-grade key management, auditability, compliance capabilities, and commercial support with SLAs. 
+SignServer Enterprise Edition is designed for production signing deployments, offering advanced signing features, enterprise-grade key management, auditability, compliance capabilities, and commercial support with SLAs. 
 
 Learn more about the differences between SignServer CE and SignServer EE: [SignServer Community vs Enterprise](https://www.signserver.org/community-vs-enterprise/)
 
@@ -55,16 +57,16 @@ Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)
 Community Support
 =================
 
-In our [Community](https://www.keyfactor.com/community/) we welcome contributions. The Community software is open source and community-supported, there is no support SLA, but a helpful best-effort Community.
+In our [Community](https://www.keyfactor.com/community/) we welcome contributions. The Community software is open source and community-supported; there is no support SLA, but a helpful best-effort Community.
 
-For information about how to engage in the community, get support, ask questions, and post comments, see [Engage in the SignServer Community](https://www.signserver.org/engage/)
+For more information about how to engage in the community, get support, ask questions, and post comments, see [Engage in the SignServer Community](https://www.signserver.org/engage/)
 
 Enterprise Support
 ==================
 
-The Enterprise edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
+The Enterprise Edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
 
-License
+Open-Source License
 =======
 
 SignServer Community is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
@@ -76,8 +78,6 @@ There are many good tutorials available on the Keyfactor for Developers [Youtube
 * [Quick start SignServer Docker Container](https://www.youtube.com/watch?v=wMqPWKi3ukE)
 * [Code Signing – Set up SignServer and OpenPGP to Sign Code and Packages](https://www.youtube.com/watch?v=cefQkP8XXs8)
 * [Helm Chart for Signing – Quick Start SignServer by Using Kubernetes and Helm](https://www.youtube.com/watch?v=nntAbPvxQAg)
-
-And many more using the container for different use cases. New tutorials are released monthly.
 
 Minimum System Requirements
 ===========================
