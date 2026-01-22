@@ -16,13 +16,13 @@ SignServer is developed in Java and runs on a JVM such as OpenJDK, available on 
 
 There are two editions of SignServer: 
 
-* **[SignServer Community](https://www.signserver.org/)**  
+* **[SignServer Community](https://www.signserver.org/)** (SignServer CE) 
 
-SignServer Community Edition is an LGPL-licensed open-source subset of SignServer Enterprise Edition, certified by the Open Source Initiative, and designed for learning, testing, and prototyping signing workflows for code, documents, and artifacts. 
+SignServer Community Edition is an LGPL-licensed open-source subset of SignServer Enterprise, certified by the Open Source Initiative, and designed for learning, testing, and prototyping signing workflows for code, documents, and artifacts. 
 
-SignServer CE is not recommended for production use, as production signing deployments typically require security certifications, advanced key protection, auditability, SLAs, support, and operational assurances available in SignServer Enterprise Edition. 
+SignServer CE is not intended for production use, as production signing deployments typically require security certifications, advanced key protection, auditability, SLAs, support, and operational assurances available in SignServer Enterprise. 
 
-* **[SignServer Enterprise](https://www.keyfactor.com/products/signserver-enterprise/)**
+* **[SignServer Enterprise](https://www.keyfactor.com/products/signserver-enterprise/)** (SignServer EE)
 
 SignServer Enterprise Edition is designed for production signing deployments, offering advanced signing features, enterprise-grade key management, auditability, compliance capabilities, and commercial support with SLAs. 
 
@@ -46,9 +46,10 @@ To run the Docker container, see the following sections below for full instructi
 
 ### Get started with SignServer on Kubernetes
 
-Install the SignServer Helm chart from Artifact Hub.
+Install the SignServer Helm chart from Artifact Hub: [SignServer Helm chart](https://artifacthub.io/packages/helm/signserver/signserver-ce)
 
-### Get Started with SignServer Enterprise Edition
+
+### Get Started with SignServer Enterprise
 
 * Run a 30-day free trial of SignServer Enterprise in a ready-to-use environment, no installation or setup required: [Keyfactor Test Drives](https://docs.keyfactor.com/test-drives/)  
 * Get in Contact: [Request a Demo](https://www.keyfactor.com/demo-request/)  
@@ -57,19 +58,15 @@ Install the SignServer Helm chart from Artifact Hub.
 
 ### Community Support
 
-In our [Community](https://www.keyfactor.com/community/) we welcome contributions. The Community software is open source and community-supported; there is no support SLA, but a helpful best-effort Community.
-
-For more information about how to engage in the community, get support, ask questions, and post comments, see [Engage in the SignServer Community](https://www.signserver.org/engage/)
-
-### Enterprise Support
-
-The Enterprise Edition is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
-
-### Resources
+SignServer Community is open source and community-supported; there is no support SLA, but a helpful best-effort community is available. 
 
 Need guidance or want to report an issue? Head over to [GitHub Discussions](https://github.com/Keyfactor/signserver-ce/discussions) or [Issues](https://github.com/Keyfactor/signserver-ce/issues).
 
 For more information about how to engage in the community, see: [Engage in the SignServer Community](https://www.signserver.org/engage/)
+
+### Enterprise Support
+
+SignServer Enterprise is a licensed software backed by professional support services. Get in contact to learn more: [Contact us](https://www.keyfactor.com/contact-us/).
 
 ## Open-Source License
 
