@@ -133,12 +133,12 @@ docker run -it --rm -p 80:8080 -p 443:8443 -h mycahostname -e TLS_SETUP_ENABLED=
 
 Once the system is fully started, go to `https://mycahostname:443/ejbca/adminweb/` to access the EJBCA Admin GUI where the instance can be managed. In the menu of the EJBCA Admin GUI you will find a link to additional Documentation.
 
-`TLS_SETUP_ENABLED="simple"` anyone with HTTPS access will be given full access to the Admin UI. It is _not_ recommended except for ephemeral tests without public network access as it gives access to the Admin UI without authentication. Production installation should use `TLS_SETUP_ENABLED="true"` when installing in order to require client certificate access to the Admin UI. With "true" the container will generate a ManagementCA that will be used to issue both server and initial client TLS certificate used for administration. The third option is `TLS_SETUP_ENABLED="later"` in which case it requires TLS configured on reverse proxy in front of EJBCA, and allows anyone access over TLS to begin using EJBCA.
+`TLS_SETUP_ENABLED="simple"` anyone with HTTPS access will be given full access to the Admin UI. It is _not_ recommended except for ephemeral tests without public network access as it gives access to the Admin UI without authentication. Production installation should use `TLS_SETUP_ENABLED="true"` when installing to require client certificate access to the Admin UI. With "true" the container will generate a ManagementCA that will be used to issue both server and initial client TLS certificates used for administration. The third option is `TLS_SETUP_ENABLED="later"` in which case it requires TLS configured on reverse proxy in front of EJBCA, and allows anyone access over TLS to begin using EJBCA.
 
 When you stop the container all data will be gone. (Skip the `--rm` flag to persist data in the containers file system or use `DATABASE_JDBC_URL` described below to persist data in an external database.)
 
 See full documentation and video tutorial: 
-**[Quick Start Guide - Start EJBCA Container with Unauthenticated Network Access](https://doc.primekey.com/x/mpuKAw)**
+**[Quick Start Guide - Start EJBCA Container with Unauthenticated Network Access](https://docs.keyfactor.com/how-to/latest/quick-start-ejbca-container-with-unauthenticated-n)**
 
 ### Quick start - classic workflow
 
@@ -157,7 +157,7 @@ Your browser likely remembers your non-certificate authenticated session, so res
 When you stop the container all data will be gone. (Skip the `--rm` flag to persist data in the containers file system or use `DATABASE_JDBC_URL` described below to persist data in an external database.)
 
 See full documentation: 
-**[Quick Start Guide - Start EJBCA Container with Client Certificate Authenticated Access](https://doc.primekey.com/ejbca/tutorials-and-guides/quick-start-guide-start-ejbca-container-with-client-certificate-authenticated-access)**
+**[Quick Start Guide - Start EJBCA Container with Client Certificate Authenticated Access](https://docs.keyfactor.com/how-to/latest/quick-start-ejbca-container-with-client-certificat)**
 
 ## Additional examples
 
