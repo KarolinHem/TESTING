@@ -69,7 +69,7 @@ EJBCA Enterprise is a licensed software backed by professional support services.
 
 ## Open-Source License
 
-EJBCA Community is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
+EJBCA Community is licensed under the **[LGPL license](https://opensource.org/license/lgpl-3-)**. 
 
 ## Tutorials
 
