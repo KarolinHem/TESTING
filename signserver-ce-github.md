@@ -39,7 +39,7 @@ Learn more about the differences between SignServer CE and SignServer EE: [SignS
 
 ### Get started with SignServer Community
 
-* Deploy from source: Clone [signserver-ce](https://github.com/Keyfactor/signserver-ce) or download our [binary distribution](https://signserver.org/download/), and install it, see [SignServer Installation](https://docs.keyfactor.com/signserver-software/latest/installation) 
+* Deploy from source: Clone [signserver-ce](https://github.com/Keyfactor/signserver-ce) or download our [latest binary distribution](https://github.com/Keyfactor/signserver-ce/releases/latest), and install it, see [SignServer Installation](https://docs.keyfactor.com/signserver-software/latest/installation) 
 * Run as a Container: [Docker Hub](https://hub.docker.com/r/keyfactor/signserver-ce) 
 * Use Helm for automation: [Artifact Hub](https://artifacthub.io/packages/helm/signserver/signserver-ce) 
 
