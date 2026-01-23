@@ -70,7 +70,7 @@ SignServer Enterprise is a licensed software backed by professional support serv
 
 ## Open-Source License
 
-SignServer Community is licensed under the **[LGPL license](https://opensource.org/licenses/lgpl-license.html)**.
+SignServer Community is licensed under the **[LGPL license](https://opensource.org/license/lgpl-3-)**. 
 
 ## Tutorials
 
